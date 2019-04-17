@@ -1,6 +1,7 @@
 package com.zhangjianbing.autoconfig.bootstrap;
 
 import com.zhangjianbing.autoconfig.repository.MyFirstRepository;
+import com.zhangjianbing.autoconfig.repository.MySecondLevelRepository;
 import org.springframework.boot.WebApplicationType;
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.context.ConfigurableApplicationContext;
@@ -23,6 +24,9 @@ public class RepositoryBootStrap {
 
         MyFirstRepository myFirstRepository = context.getBean("myFirstRepository", MyFirstRepository.class);
         System.out.println("=================> " + myFirstRepository);
+
+        MySecondLevelRepository secondLevelRepository = context.getBean("mySecondLevelRepository", MySecondLevelRepository.class);
+        System.out.println("=================> " + secondLevelRepository);
 
         // 关闭对象
         context.close();
