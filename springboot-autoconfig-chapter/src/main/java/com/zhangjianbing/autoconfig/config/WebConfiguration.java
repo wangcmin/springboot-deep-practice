@@ -15,9 +15,9 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class WebConfiguration {
 
-//    @Bean
-//    public User user() {
-//        return new User();
-//    }
+    @Bean
+    public User user() {
+        return new User();
+    }
 
 }

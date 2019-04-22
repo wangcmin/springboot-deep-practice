@@ -6,6 +6,7 @@ import com.zhangjianbing.autoconfig.annotation.SecondLevelRepository;
  * @author 张建兵 Ryan
  * time 2019/4/17
  */
-@SecondLevelRepository
+@SecondLevelRepository(value = "mySecondLevelRepository")
 public class MySecondLevelRepository {
+
 }
