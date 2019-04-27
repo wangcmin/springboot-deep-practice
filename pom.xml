@@ -18,6 +18,7 @@
     <modules>
         <module>springboot-web-chapter</module>
         <module>springboot-autoconfig-chapter</module>
+        <module>springboot-application-chapter</module>
     </modules>
 
     <dependencyManagement>

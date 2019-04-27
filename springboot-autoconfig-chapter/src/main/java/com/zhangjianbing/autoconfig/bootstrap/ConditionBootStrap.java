@@ -15,7 +15,7 @@ import org.springframework.context.annotation.Bean;
 public class ConditionBootStrap {
 
     @Bean
-    @ConditionalOnSystem(name = "user.name",value = "Ryan_Zhang")
+    @ConditionalOnSystem(name = "user.name",value = "zhangjianbing")
     public User user() {
         return new User();
     }

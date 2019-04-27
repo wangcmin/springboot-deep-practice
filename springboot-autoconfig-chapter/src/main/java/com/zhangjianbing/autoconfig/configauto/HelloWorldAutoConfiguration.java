@@ -1,5 +1,6 @@
 package com.zhangjianbing.autoconfig.configauto;
 
+import com.zhangjianbing.autoconfig.annotation.ConditionalOnSystem;
 import com.zhangjianbing.autoconfig.config.WebConfiguration;
 import com.zhangjianbing.autoconfig.entity.User;
 import org.springframework.context.annotation.Configuration;
@@ -12,8 +13,8 @@ import org.springframework.context.annotation.Import;
  * @date 2019/4/21
  * @From https://www.zhangjianbing.com
  */
-@Configuration
 @Import(value = {User.class})
-public class WebAutoConfiguration {
+@ConditionalOnSystem(name = "user.name",value = "zhangjianbing") // 条件装配
+public class HelloWorldAutoConfiguration {
 
 }

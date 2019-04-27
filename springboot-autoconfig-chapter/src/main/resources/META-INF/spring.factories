@@ -1,2 +1,2 @@
 org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
-com.zhangjianbing.autoconfig.configauto.WebAutoConfiguration
+com.zhangjianbing.autoconfig.configauto.HelloWorldAutoConfiguration
