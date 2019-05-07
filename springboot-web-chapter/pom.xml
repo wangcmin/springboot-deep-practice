@@ -12,18 +12,25 @@
     <artifactId>springboot-web-chapter</artifactId>
 
     <dependencies>
+
+        <!--<dependency>-->
+            <!--<groupId>org.springframework.boot</groupId>-->
+            <!--<artifactId>spring-boot-starter-web</artifactId>-->
+
+            <!--&lt;!&ndash; 排除tomcat &ndash;&gt;-->
+            <!--<exclusions>-->
+                <!--<exclusion>-->
+                    <!--<groupId>org.springframework.boot</groupId>-->
+                    <!--<artifactId>spring-boot-starter-tomcat</artifactId>-->
+                <!--</exclusion>-->
+            <!--</exclusions>-->
+
+        <!--</dependency>-->
+
+        <!-- 当webflux跟web同时存在的时候，会忽略webflux依赖 -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
-
-            <!-- 排除tomcat -->
-            <exclusions>
-                <exclusion>
-                    <groupId>org.springframework.boot</groupId>
-                    <artifactId>spring-boot-starter-tomcat</artifactId>
-                </exclusion>
-            </exclusions>
-
+            <artifactId>spring-boot-starter-webflux</artifactId>
         </dependency>
 
         <dependency>
