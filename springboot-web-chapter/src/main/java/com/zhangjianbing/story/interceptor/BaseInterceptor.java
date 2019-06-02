@@ -18,9 +18,7 @@ public class BaseInterceptor implements HandlerInterceptor {
 
     @Override
     public boolean preHandle(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse, Object o) throws Exception {
-        int i = 1;
-        System.out.println("2222222222222222222222222222222222222");
-        return false;
+        return true;
     }
 
     @Override
